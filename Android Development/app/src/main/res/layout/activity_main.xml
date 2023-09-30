@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:backgroundTint="@color/black"
+    tools:context=".MainActivity">
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Hello World!"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rotation="0"
+            android:text="Add Data"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#070707"
+            android:textColorHighlight="#630707"
+            android:textColorLink="#000000"
+            android:textIsSelectable="false"
+            android:textSelectHandle="@android:drawable/arrow_down_float"
+            android:textSelectHandleLeft="@android:drawable/arrow_up_float"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:autoSizeTextType="uniform" />
+
+        <EditText
+            android:id="@+id/nameBtn"
+            style="@android:style/Widget.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_horizontal|start|center_horizontal"
+            android:layout_margin="30dp"
+            android:foregroundGravity="center"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:letterSpacing="1"
+            android:shadowColor="#0E0E0E"
+            android:textAlignment="inherit"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/rollBtn"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_horizontal|start|center_horizontal"
+            android:layout_margin="30dp"
+            android:foregroundGravity="center"
+            android:hint="Roll"
+            android:inputType="number"
+            android:letterSpacing="1"
+            android:shadowColor="#0E0E0E"
+            android:textAlignment="inherit"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/contactBtn"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_horizontal|start|center_horizontal"
+            android:layout_margin="30dp"
+            android:foregroundGravity="center"
+            android:hint="Contact"
+            android:inputType="phone"
+            android:letterSpacing="1"
+            android:shadowColor="#0E0E0E"
+            android:textAlignment="inherit"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_btn"
+                android:backgroundTint="@color/teal_700"
+                android:backgroundTintMode="screen"
+                android:text="Insert"
+                android:textColor="@color/white" />
+
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_btn"
+                android:backgroundTint="@color/purple_700"
+                android:backgroundTintMode="src_over"
+                android:text="Update"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_btn"
+                android:backgroundTint="#EC1F48"
+                android:backgroundTintMode="src_atop"
+                android:text="Delete"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="396dp"
+            android:layout_height="203dp"
+            android:layout_gravity="center"
+
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_btn"
+                android:backgroundTint="#070F23"
+                android:gravity="center|center_vertical"
+                android:layerType="software"
+                android:text="View"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
